@@ -18,4 +18,7 @@ VSCode | 讓你可以方便的編輯程式 | [下載VSCode](https://code.visuals
 並輸入以下指令：
 `cd `，並把開啟檔案總管，把資料夾拖進 cmd 中，注意路徑會出現在命令列中，並按下 Enter，
 接著輸入：
-`gradlew genVSCoderuns`，程式大概會跑 10~20 分鐘
+`gradlew genVSCoderuns`，程式大概會跑 10~20 分鐘。
+完成後，把[從這裡下載下來的zip檔](https://github.com/mm-news/mod-mhps/archive/refs/heads/main.zip)裡面的 `mod-mhps-main` 資料夾，
+然後把裡面的東西全部貼去 `src\main` 資料夾，再用 VSCode打開裡面的 Main.java ，
+下載完 VSCode 所要求的延伸工具後...
