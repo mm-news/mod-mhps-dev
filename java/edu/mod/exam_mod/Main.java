@@ -41,6 +41,7 @@ public class Main
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
         MinecraftForge.EVENT_BUS.register(new BlockBreakMessage());
         MinecraftForge.EVENT_BUS.register(new WallClimb());
+        MinecraftForge.EVENT_BUS.register(new SuperJump());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
