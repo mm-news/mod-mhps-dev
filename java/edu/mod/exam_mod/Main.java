@@ -42,6 +42,9 @@ public class Main
         MinecraftForge.EVENT_BUS.register(new BlockBreakMessage());
         MinecraftForge.EVENT_BUS.register(new WallClimb());
         MinecraftForge.EVENT_BUS.register(new SuperJump());
+        MinecraftForge.EVENT_BUS.register(new SlowFalling());
+        
+
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
