@@ -12,7 +12,7 @@ public class SuperJump {
             return;
         }
         
-        event.getEntity().setDeltaMovement(0.0F, 5F, 0.0F);
+        event.getEntity().setDeltaMovement(0.0F, 6F, 0.0F);
     }
 
 }
