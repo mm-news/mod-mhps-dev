@@ -17,7 +17,7 @@ import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("examplemod")
+@Mod("mod_mhps")
 public class Main
 {
     // Directly reference a log4j logger.
@@ -43,7 +43,7 @@ public class Main
         MinecraftForge.EVENT_BUS.register(new WallClimb());
         MinecraftForge.EVENT_BUS.register(new SuperJump());
         MinecraftForge.EVENT_BUS.register(new SlowFalling());
-        
+        MinecraftForge.EVENT_BUS.register(new ExplodeWhenEntityDie());
 
     }
 
