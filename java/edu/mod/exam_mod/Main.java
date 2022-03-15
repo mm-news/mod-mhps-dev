@@ -39,11 +39,10 @@ public class Main
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
-        MinecraftForge.EVENT_BUS.register(new BlockBreakMessage());
         MinecraftForge.EVENT_BUS.register(new WallClimb());
         MinecraftForge.EVENT_BUS.register(new SuperJump());
         MinecraftForge.EVENT_BUS.register(new SlowFalling());
-        MinecraftForge.EVENT_BUS.register(new ExplodeWhenEntityDie());
+        MinecraftForge.EVENT_BUS.register(new ExplodeWhenCreeperDie());
 
     }
 
