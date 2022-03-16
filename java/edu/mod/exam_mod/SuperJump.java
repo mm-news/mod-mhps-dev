@@ -1,6 +1,7 @@
 package edu.mod.exam_mod;
 
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingJumpEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
@@ -12,7 +13,9 @@ public class SuperJump {
             return;
         }
         
-        event.getEntity().setDeltaMovement(0.0F, 6F, 0.0F);
+        Vec3 playerMovement = event.getEntity().getDeltaMovement();
+
+        event.getEntity().setDeltaMovement(playerMovement.x, playerMovement.y*6, playerMovement.z);
     }
 
 }
