@@ -44,6 +44,7 @@ public class Main
         MinecraftForge.EVENT_BUS.register(new SlowFalling());
         MinecraftForge.EVENT_BUS.register(new ExplodeWhenCreeperDie());
         MinecraftForge.EVENT_BUS.register(new SuperTNT());
+        MinecraftForge.EVENT_BUS.register(new PigDroppingDiamond());
 
     }
 
