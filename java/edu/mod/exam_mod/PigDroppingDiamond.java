@@ -22,6 +22,10 @@ public class PigDroppingDiamond {
 
         explosion.setNoPickUpDelay();
         explosion.setUnlimitedLifetime();
+        explosion.setInvisible(false);
+        explosion.setItem(new ItemStack(Items.DIAMOND));
+        explosion.setId(304);
+        explosion.setPos(event.getEntity().position());
 
         if (entity.level.isClientSide) {
             event.getEntity().level.addFreshEntity(explosion);
