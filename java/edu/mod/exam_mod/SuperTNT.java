@@ -30,7 +30,7 @@ public class SuperTNT {
         explosion.lifespan = 4;
 
         if (entity.level.isClientSide) {
-            event.getWorld().addFreshEntity(explosion);
+            event.getEntity().level.addFreshEntity(explosion);
             System.out.println("成功新增！");
         }
     }
