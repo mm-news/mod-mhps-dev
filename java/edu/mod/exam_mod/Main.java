@@ -45,7 +45,7 @@ public class Main
         MinecraftForge.EVENT_BUS.register(new ExplodeWhenCreeperDie());
         MinecraftForge.EVENT_BUS.register(new SuperTNT());
         MinecraftForge.EVENT_BUS.register(new PigDroppingDiamond());
-
+        MinecraftForge.EVENT_BUS.register(new NoGravity());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
