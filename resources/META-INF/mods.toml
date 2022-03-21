@@ -29,7 +29,7 @@ displayName="學逼模組" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
-credits="謝謝所有人的幫忙~~" #optional
+credits="學逼六邊形內接三角形" #optional
 # A text field displayed in the mod UI
 authors="張雁舒，指導老師：戴心翊、吳珮榕" #optional
 # The description text for the mod (multi line!) (#mandatory)
