@@ -1,4 +1,4 @@
-package edu.mod.exam_mod;
+package edu.mod.mod_mhps;
 
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.level.Explosion;

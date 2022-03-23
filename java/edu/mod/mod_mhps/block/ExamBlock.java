@@ -1,4 +1,4 @@
-package edu.mod.exam_mod.block;
+package edu.mod.mod_mhps.block;
 
 import java.util.function.Supplier;
 

@@ -1,4 +1,4 @@
-package edu.mod.exam_mod;
+package edu.mod.mod_mhps;
 
 import net.minecraft.world.item.Items;
 import net.minecraftforge.event.TickEvent.PlayerTickEvent;
