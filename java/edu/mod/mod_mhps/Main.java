@@ -5,9 +5,11 @@ import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import edu.mod.mod_mhps.item.RadioactiveMaterial;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
@@ -23,6 +25,12 @@ public class Main
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
     public Main() {
+        // Register item "radioactive material"
+        IEventBus eventBus = 
+        FMLJavaModLoadingContext.get().getModEventBus();
+
+        RadioactiveMaterial.register(eventBus);
+
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
