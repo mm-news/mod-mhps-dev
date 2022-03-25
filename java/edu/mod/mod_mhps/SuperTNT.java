@@ -31,7 +31,6 @@ public class SuperTNT {
 
         if (entity.level.isClientSide) {
             event.getEntity().level.addFreshEntity(explosion);
-            System.out.println("成功新增！");
         }
     }
 
@@ -42,12 +41,10 @@ public class SuperTNT {
         System.out.println(event.getEntityItem().getItem());
 
         if (!(event.getEntityItem().getItem() == new ItemStack(Blocks.TNT))) {
-            System.out.println("遭到過濾！");
             return;
         }
         
         ItemEntity explosion = event.getEntityItem();
-        System.out.println("加強爆炸成功！");
         explosion.level.explode(explosion, explosion.getX(), explosion.getY(), explosion.getZ(), 3F, BlockInteraction.DESTROY);
 
     }
