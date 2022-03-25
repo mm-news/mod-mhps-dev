@@ -7,6 +7,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -53,7 +54,12 @@ public class RadioactiveBlock {
     RADIOACTIVE_BLOCK = registerBlock(
         "radioactive_block", 
         () -> new Block(
-            BlockBehaviour.Properties.of(Material.STONE).strength(5F)
+            BlockBehaviour.Properties.of(Material.STONE)
+            .requiresCorrectToolForDrops()
+            .strength(5F)
+            .explosionResistance(5F)
+            .destroyTime(10)
+            .sound(SoundType.METAL)
         )
     );
 

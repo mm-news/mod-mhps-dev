@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import edu.mod.mod_mhps.block.RadioactiveBlock;
 import edu.mod.mod_mhps.item.RadioactiveMaterial;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -30,6 +31,8 @@ public class Main
         FMLJavaModLoadingContext.get().getModEventBus();
 
         RadioactiveMaterial.register(eventBus);
+
+        RadioactiveBlock.register(eventBus);
 
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
