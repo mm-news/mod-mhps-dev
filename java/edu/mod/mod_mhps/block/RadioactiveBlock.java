@@ -56,10 +56,12 @@ public class RadioactiveBlock {
         () -> new Block(
             BlockBehaviour.Properties.of(Material.STONE)
             .requiresCorrectToolForDrops()
-            .strength(5F)
             .explosionResistance(5F)
             .destroyTime(10)
             .sound(SoundType.METAL)
+            .jumpFactor(5F)
+            .friction(0.5F)
+            .strength(5, 2)
         )
     );
 
