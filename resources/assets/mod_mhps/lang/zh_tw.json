@@ -1,3 +1,4 @@
 {
-    "item.mod_mhps.radioactive_material": "放射性物質"
+    "item.mod_mhps.radioactive_material": "放射性物質", 
+    "block.mod_mhps.radioactive_block": "放射性磚"
 }

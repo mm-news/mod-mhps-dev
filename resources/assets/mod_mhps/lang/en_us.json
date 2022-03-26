@@ -1,3 +1,4 @@
 {
-    "item.mod_mhps.radioactive_material": "radioactive material"
+    "item.mod_mhps.radioactive_material": "radioactive material", 
+    "block.mod_mhps.radioactive_block": "radioactive block"
 }
