@@ -1,15 +1,24 @@
 {
-    "type": "block", 
+    "type": "minecraft:block",
     "pools": [
-        {
-            "rolls": 1, 
-            "bonus_rolls": 5,
-            "entries": [
-                {
-                    "type": "minecraft:item", 
-                    "name": "mod_mhps:radioactive_material"
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "mod_mhps:radioactive_material",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 5
                 }
+              }
             ]
-        }
+          }
+        ]
+      }
     ]
-}
+  }
+  
