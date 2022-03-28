@@ -61,7 +61,7 @@ public class RadioactiveBlock {
             .sound(SoundType.METAL)
             .jumpFactor(5F)
             .friction(0.5F)
-            .strength(5, 2)
+            .strength(1.5F, 6F)
         )
     );
 
