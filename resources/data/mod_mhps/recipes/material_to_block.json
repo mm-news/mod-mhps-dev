@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rrr",
+    "rrr",
+    "rrr"
+  ],
+  "key": {
+    "r": {
+      "item": "mod_mhps:radioactive_material"
+    }
+  },
+  "result": {
+    "item": "mod_mhps:radioactive_block"
+  }
+}

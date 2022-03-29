@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "mod_mhps:radioactive_block"
+      }
+    ],
+    "result": {
+      "item": "mod_mhps:radioactive_material",
+      "count": 9
+    }
+  }
+  
