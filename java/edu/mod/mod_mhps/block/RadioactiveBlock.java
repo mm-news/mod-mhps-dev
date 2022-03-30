@@ -64,5 +64,4 @@ public class RadioactiveBlock {
             .strength(1.5F, 6F)
         )
     );
-
 }
