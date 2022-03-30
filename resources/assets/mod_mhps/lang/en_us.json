@@ -1,4 +1,5 @@
 {
     "item.mod_mhps.radioactive_material": "radioactive material", 
-    "block.mod_mhps.radioactive_block": "radioactive block"
+    "block.mod_mhps.radioactive_block": "radioactive block", 
+    "item.mod_mhps.wall_climbing_glove": "wall climbing glove"
 }
