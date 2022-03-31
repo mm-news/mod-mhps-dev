@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "bbb",
+      "yyy"
+    ],
+    "key": {
+      "b": {
+        "item": "minecraft:blue_wool"
+      },
+      "y": {
+        "item": "minecraft:yellow_wool"
+      }
+    },
+    "result": {
+      "item": "mod_mhps:stand_with_ukraine_block"
+    }
+  }
+  

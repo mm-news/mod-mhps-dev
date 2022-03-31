@@ -1,5 +1,6 @@
 {
     "item.mod_mhps.radioactive_material": "放射性物質", 
     "block.mod_mhps.radioactive_block": "放射性磚", 
-    "item.mod_mhps.wall_climbing_glove": "爬牆手套"
+    "item.mod_mhps.wall_climbing_glove": "爬牆手套", 
+    "block.mod_mhps.stand_with_ukraine_block": "支持烏克蘭方塊"
 }

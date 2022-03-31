@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import edu.mod.mod_mhps.block.RadioactiveBlock;
+import edu.mod.mod_mhps.block.StandWithUkraineBlock;
 import edu.mod.mod_mhps.item.RadioactiveMaterial;
 import edu.mod.mod_mhps.item.WallClimbingGlove;
 import net.minecraft.world.level.block.Blocks;
@@ -36,6 +37,8 @@ public class Main
         RadioactiveBlock.register(eventBus);
 
         WallClimbingGlove.register(eventBus);
+
+        StandWithUkraineBlock.register(eventBus);
 
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);

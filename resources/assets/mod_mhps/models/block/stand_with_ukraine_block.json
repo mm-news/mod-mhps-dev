@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all", 
+    "textures": {
+        "all": "mod_mhps:block/stand_with_ukraine_block"
+    }
+}
