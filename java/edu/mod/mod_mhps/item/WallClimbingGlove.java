@@ -23,6 +23,7 @@ public class WallClimbingGlove {
             new Item.Properties().tab(
                 CreativeModeTab.TAB_TOOLS
             )
+            .stacksTo(1) //限制堆疊數量為1
         )
     );
 }
