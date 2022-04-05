@@ -3,6 +3,7 @@
     "block.mod_mhps.radioactive_block": "radioactive block", 
     "item.mod_mhps.wall_climbing_glove": "wall climbing glove", 
     "block.mod_mhps.stand_with_ukraine_block": "stand with Ukraine block", 
-    "item.mod_mhps.anti_gravity_particles": "anti-gravity particles"
+    "item.mod_mhps.anti_gravity_particles": "anti-gravity particles", 
+    "block.mod_mhps.anti_gravity_stone": "anti-gravity stone", 
     "itemGroup.mod_mhps": "mod_mhps"
 }
