@@ -1,6 +1,5 @@
 package edu.mod.mod_mhps.item;
 
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -16,14 +15,13 @@ public class AntiGravityParticles {
         ITEMS.register(eventBus);
     }
 
-    public static final RegistryObject<Item> ANTI_GRAVITY_STONE = 
+    public static final RegistryObject<Item> ANTI_GRAVITY_PARTICLES = 
     ITEMS.register(
         "anti_gravity_particles", 
         () -> new Item(
             new Item.Properties().tab(
-                CreativeModeTab.TAB_TOOLS
+                ItemGroup.MOD_MHPS
             )
-            .stacksTo(1) //限制堆疊數量為1
         )
     );
 }

@@ -1,6 +1,5 @@
 package edu.mod.mod_mhps.item;
 
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -22,7 +21,7 @@ public class RadioactiveMaterial {
         "radioactive_material", 
         () -> new Item(
             new Item.Properties().tab(
-                CreativeModeTab.TAB_MISC
+                ItemGroup.MOD_MHPS
             )
         )
     );

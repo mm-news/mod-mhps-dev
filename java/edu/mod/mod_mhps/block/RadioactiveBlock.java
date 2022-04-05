@@ -2,9 +2,9 @@ package edu.mod.mod_mhps.block;
 
 import java.util.function.Supplier;
 
+import edu.mod.mod_mhps.item.ItemGroup;
 import edu.mod.mod_mhps.item.RadioactiveMaterial;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -16,7 +16,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class RadioactiveBlock {
-    
+
     public static final DeferredRegister<Block> BLOCKS =
     DeferredRegister.create(ForgeRegistries.BLOCKS, "mod_mhps");
 
@@ -43,7 +43,7 @@ public class RadioactiveBlock {
             () -> new BlockItem(
                 block.get(), 
                 new Item.Properties().tab(
-                    CreativeModeTab.TAB_BUILDING_BLOCKS
+                    ItemGroup.MOD_MHPS
                 )
             )
         );
@@ -62,6 +62,8 @@ public class RadioactiveBlock {
             .jumpFactor(5F)
             .friction(0.5F)
             .strength(1.5F, 6F)
+            .lightLevel((state) -> state.toString() != "BLUH BLUH BLUH BLUH" ? 15 : 15)
         )
     );
+
 }
