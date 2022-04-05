@@ -62,7 +62,7 @@ public class RadioactiveBlock {
             .jumpFactor(5F)
             .friction(0.5F)
             .strength(1.5F, 6F)
-            .lightLevel((state) -> state.toString() != "BLUH BLUH BLUH BLUH" ? 15 : 15)
+            .lightLevel((state) -> 15)
         )
     );
 
