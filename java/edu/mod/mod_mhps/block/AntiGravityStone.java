@@ -62,6 +62,7 @@ public class AntiGravityStone {
             .jumpFactor(5F)
             .friction(0.5F)
             .strength(1.5F, 6F)
+            .lightLevel(state -> 5)
         )
     );
 }
