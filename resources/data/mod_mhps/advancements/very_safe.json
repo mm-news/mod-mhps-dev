@@ -1,0 +1,53 @@
+{
+    "display": {
+        "title": {
+            "text": "非常安全！",
+            "color": "green",
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": true,
+            "obfuscated": false
+        },
+        "description": {
+            "text": "本品已經國際原子能總署 IAEA 測驗安全",
+            "color": "light_purple",
+            "bold": true,
+            "strikethrough": true
+        },
+        "icon": {
+            "item": "mod_mhps:radioactive_material"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "radioactive material": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "min": 1,
+                            "max": 1
+                        },
+                        "item": "mod_mhps:radioactive_material"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "radioactive material"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "wall_climbing_glove"
+        ],
+        "experience": 50
+    }
+}
