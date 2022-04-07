@@ -15,8 +15,6 @@ public class ConfiguredFeatures {
 
     public static final List<OreConfiguration.TargetBlockState> OVERWORLD_CITRINE_ORES = List.of(
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, RadioactiveBlock.RADIOACTIVE_BLOCK.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, RadioactiveBlock.RADIOACTIVE_BLOCK.get().defaultBlockState()), 
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, AntiGravityStone.ANTI_GRAVITY_STONE.get().defaultBlockState()),
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, AntiGravityStone.ANTI_GRAVITY_STONE.get().defaultBlockState()));
 
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> CITRINE_ORE = FeatureUtils.register("citrine_ore",
