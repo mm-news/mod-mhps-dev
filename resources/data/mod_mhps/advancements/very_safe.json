@@ -11,12 +11,10 @@
         },
         "description": {
             "text": "本品已經國際原子能總署 IAEA 測驗安全",
-            "color": "ffffff",
+            "color": "#198964",
             "bold": true,
             "strikethrough": true
         },
-
-        "background": "#198964", 
 
         "icon": {
             "item": "mod_mhps:radioactive_material"
@@ -52,7 +50,9 @@
     ],
     "rewards": {
         "recipes": [
-            "mod_mhps:wall_climbing_glove"
+            "mod_mhps:wall_climbing_glove", 
+            "mod_mhps:material_to_block", 
+            "mod_mhps:block_to_material"
         ],
         "experience": 50
     }
