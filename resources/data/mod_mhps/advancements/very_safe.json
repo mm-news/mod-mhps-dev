@@ -1,54 +1,59 @@
 {
     "display": {
-      "icon": {
-        "item": "mod_mhps:radioactive_material"
-      },
-      "title": {
-        "text": "非常安全",
-        "color": "#ffffff",
-        "bold": true,
-        "strikethrough": true,
-        "hoverEvent": {
-          "action": "show_text",
-          "value": "真的很安全......還能讓你的科技進步不少"
-        }
-      },
-      "description": {
-        "text": "本品已經國際原子能總署 IAEA 檢驗通過",
-        "color": "#ffffff"
-      },
-      "background": "#000000",
-      "frame": "task",
-      "show_toast": true,
-      "announce_to_chat": true, 
-      "hidden": false
-    },
-    "parent": "minecraft:story/iron_tools",
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:inventory_changed",
-        "conditions": {
-          "items": [
-            {
-              "item": "mod_mhps:radioactive_materialmod_mhps:radioactive_material"
-            }
-          ]
-        }
-      }
+        "title": {
+            "text": "非常安全！",
+            "color": "#ffffff",
+            "bold": true,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": true,
+            "obfuscated": false
+        },
+        "description": {
+            "text": "本品已經國際原子能總署 IAEA 測驗安全",
+            "color": "ffffff",
+            "bold": true,
+            "strikethrough": true
+        },
+
+        "background": "#198964", 
+
+        "icon": {
+            "item": "mod_mhps:radioactive_material"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
     },
 
+    "parent": "minecraft:story/iron_tools",
+
+    "criteria": {
+        "radioactive material": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "min": 1,
+                            "max": 1
+                        },
+                        "item": "mod_mhps:radioactive_material"
+                    }
+                ]
+            }
+        }
+    },
     "requirements": [
         [
-            "requirement"
+            "radioactive material"
         ]
     ],
-
     "rewards": {
-      "recipes": [
-        "mod_mhps:material_to_block",
-        "mod_mhps:wall_climbing_glove"
-      ],
-      "experience": 50
+        "recipes": [
+            "mod_mhps:wall_climbing_glove"
+        ],
+        "experience": 50
     }
-  }
-  
+}
