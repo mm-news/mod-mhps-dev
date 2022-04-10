@@ -1,10 +1,12 @@
 {
-    "homepage": "NONE", 
+    "homepage": "https://github.com/mm-news/mod-mhps", 
     "1.18.2": {
-      "0.0.0": "測試版"
+      "0.0.0.0": "測試版", 
+      "1.0.0.0": "正式版", 
+      "1.0.0.1": "BATA"
     },
     "promos": {
-      "1.18.2-latest": "0.0.0",
-      "1.18.2-recommended": "0.0.0"
+      "1.18.2-latest": "1.0.0.0",
+      "1.18.2-recommended": "1.0.0.0"
     }
   }
