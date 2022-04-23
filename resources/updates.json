@@ -2,10 +2,11 @@
   "homepage": "https://github.com/mm-news/mod-mhps",
   "1.18.2": {
     "0.0.0.0": "dev edition", 
-    "1.0.0.0": "formal edition"
+    "1.0.0.0": "formal edition", 
+    "1.1.0.0": "added die-ball&make radioactive material eatable"
   },
   "promos": {
-    "1.18.2-latest": "1.0.0.0",
-    "1.18.2-recommended": "1.0.0.0.0"
+    "1.18.2-latest": "1.1.0.0",
+    "1.18.2-recommended": "1.1.0.0"
   }
 }
