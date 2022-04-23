@@ -5,5 +5,7 @@
     "block.mod_mhps.stand_with_ukraine_block": "stand with Ukraine block", 
     "item.mod_mhps.anti_gravity_particles": "anti-gravity particles", 
     "block.mod_mhps.anti_gravity_stone": "anti-gravity stone", 
-    "itemGroup.mod_mhps": "mod_mhps"
+    "itemGroup.mod_mhps": "mod_mhps", 
+    "entity.mod_mhps.die_ball": "die-ball", 
+    "item.mod_mhps.die_ball_spawn_egg": "die-ball spawn egg"
 }

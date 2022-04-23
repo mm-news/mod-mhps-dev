@@ -1,0 +1,107 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:tnt",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "quality": 1,
+            "name": "minecraft:cooked_porkchop",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 5
+                },
+                "conditions": [
+                  {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                      "is_explosion": true,
+                      "is_fire": true,
+                      "is_magic": false,
+                      "is_projectile": false,
+                      "is_lightning": true,
+                      "bypasses_armor": false,
+                      "bypasses_invulnerability": false,
+                      "bypasses_magic": false
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "quality": 1,
+            "name": "minecraft:porkchop",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 5,
+                  "max": 10
+                }
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:damage_source_properties",
+                "predicate": {
+                  "is_explosion": false,
+                  "is_fire": false,
+                  "is_magic": true,
+                  "is_projectile": true,
+                  "is_lightning": false,
+                  "bypasses_armor": true,
+                  "bypasses_invulnerability": false,
+                  "bypasses_magic": false
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cake",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
