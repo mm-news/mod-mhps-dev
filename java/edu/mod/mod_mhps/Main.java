@@ -5,13 +5,10 @@ import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import edu.mod.mod_mhps.block.AntiGravityStone;
-import edu.mod.mod_mhps.block.RadioactiveBlock;
-import edu.mod.mod_mhps.block.StandWithUkraineBlock;
-import edu.mod.mod_mhps.item.AntiGravityParticles;
-import edu.mod.mod_mhps.item.RadioactiveMaterial;
-import edu.mod.mod_mhps.item.WallClimbingGlove;
-import net.minecraft.world.level.block.Blocks;
+import edu.mod.mod_mhps.block.*;
+import edu.mod.mod_mhps.core.init.EntityInit;
+import edu.mod.mod_mhps.core.init.SoundInit;
+import edu.mod.mod_mhps.item.*;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -30,6 +27,7 @@ public class Main
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
     public Main() {
+
         // Register item "radioactive material"
         IEventBus eventBus = 
         FMLJavaModLoadingContext.get().getModEventBus();
@@ -46,6 +44,12 @@ public class Main
 
         AntiGravityStone.register(eventBus);
 
+        EntityInit.ENTITIES.register(eventBus);
+
+        SoundInit.SOUNDS.register(eventBus);
+
+        DieBallSpawnEgg.register(eventBus);
+
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -61,14 +65,14 @@ public class Main
     {
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
         MinecraftForge.EVENT_BUS.register(new WallClimb());
         MinecraftForge.EVENT_BUS.register(new SuperJump());
         MinecraftForge.EVENT_BUS.register(new SlowFalling());
-        MinecraftForge.EVENT_BUS.register(new ExplodeWhenCreeperDie());
+        MinecraftForge.EVENT_BUS.register(new ExplodeWhenDieDie());
         MinecraftForge.EVENT_BUS.register(new SuperTNT());
         MinecraftForge.EVENT_BUS.register(new PigDroppingDiamond());
         MinecraftForge.EVENT_BUS.register(new NoGravity());
+        MinecraftForge.EVENT_BUS.register(new DieBallSpawnEgg());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
